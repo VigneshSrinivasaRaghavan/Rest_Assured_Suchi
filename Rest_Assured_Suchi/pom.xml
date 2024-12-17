@@ -1,0 +1,50 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>root</groupId>
+   <version>1.0</version>
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+    </properties>
+    <artifactId>project</artifactId>
+   <packaging>pom</packaging>
+   <name>project</name>
+   <dependencies>
+      <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+      <dependency>
+         <groupId>io.rest-assured</groupId>
+         <artifactId>rest-assured</artifactId>
+         <version>5.5.0</version>
+         <scope>test</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+      <dependency>
+         <groupId>org.testng</groupId>
+         <artifactId>testng</artifactId>
+         <version>7.10.2</version>
+         <scope>test</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+      <dependency>
+         <groupId>io.rest-assured</groupId>
+         <artifactId>json-path</artifactId>
+         <version>5.5.0</version>
+      </dependency>
+   </dependencies>
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+               <source>23</source> <!-- Replace 17 with your JDK version -->
+               <target>23</target> <!-- Replace 17 with your JDK version -->
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+
+</project>
